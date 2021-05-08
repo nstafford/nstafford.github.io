@@ -5,7 +5,7 @@
     margin-right: auto;
     display: block;
     width: 800px;
-}*/
+}
 canvas {
     padding: 0;
     margin: auto;
@@ -17,7 +17,7 @@ canvas {
     bottom: 0;
     left: 0;
     right: 0;
-}
+}*/
 canvas{
     position: absolute;
     top: 50%;
