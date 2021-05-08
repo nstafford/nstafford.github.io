@@ -3,10 +3,17 @@ function setup() {
 }
 
 function draw() {
+  const radius = 80;
   if (mouseIsPressed) {
     fill(0);
   } else {
     fill(255);
   }
-  ellipse(mouseX, mouseY, 80, 80);
+  if (
+    mouseX > radius &&
+    mouseX < 800-radius &&
+    mouseY > radius
+    mouseY < 800-radius) {
+      ellipse(mouseX, mouseY, radius, radius);
+  }
 }
