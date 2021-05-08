@@ -12,8 +12,9 @@ function draw() {
   if (
     mouseX > radius &&
     mouseX < 800-radius &&
-    mouseY > radius
+    mouseY > radius &&
     mouseY < 800-radius) {
       ellipse(mouseX, mouseY, radius, radius);
+    console.log(mouseX);
   }
 }
