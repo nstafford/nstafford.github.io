@@ -1,6 +1,15 @@
 function setup() {
   createCanvas(800, 800);
-  fullscreen();
+}
+
+function mousePressed() {
+      
+    // Set the value of fullscreen
+    // into the variable
+    let fs = fullscreen();
+      
+    // Call to fullscreen function
+    fullscreen(!fs); 
 }
 
 function windowResized() {
