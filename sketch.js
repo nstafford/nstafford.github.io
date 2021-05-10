@@ -4,7 +4,7 @@ function setup() {
   textSize(60);
   var i;
   for (i = 0; i < 100; i++) {
-    fill(0,0,0,100-i);
+    fill(211,122,32,100-i);
     text("Press space for fullscreen.", 100, 200);
 }    
   
