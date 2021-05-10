@@ -2,6 +2,10 @@ function setup() {
   createCanvas(800, 800);
 }
 
+function windowResized() {
+  resizeCanvas(windowWidth, windowHeight);
+}
+
 function draw() {
   const radius = 80;
   if (mouseIsPressed) {
