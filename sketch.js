@@ -1,6 +1,25 @@
 function setup() {
   createCanvas(windowWidth,windowHeight);
   background(0);
+  textSize(60);
+  var i;
+  for (i = 0; i < 100; i++) {
+    fill(0,0,0,100-i);
+    text("Press space for fullscreen.", 100, 200);
+}    
+  
+  
+}
+
+function keyPressed() {
+  if (keyCode === 32) {
+    // Set the value of fullscreen
+    // into the variable
+    let fs = fullscreen();
+      
+    // Call to fullscreen function
+    fullscreen(!fs); 
+  }
 }
 
 function mousePressed() {
