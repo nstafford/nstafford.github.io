@@ -12,7 +12,7 @@ function setup() {
 }
 
 function keyPressed() {
-  if (keyCode === 32) {
+  if (keyCode === SPACE) {
     // Set the value of fullscreen
     // into the variable
     let fs = fullscreen();
