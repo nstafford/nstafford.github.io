@@ -3,7 +3,7 @@ function setup() {
   background(0);
   textSize(60);
   
-  setTimeout(() => {  console.log("World!"); }
+  setTimeout(() => {
     var i;
     for (i = 0; i < 100; i++) {
       fill(211,122,32,100-i);
