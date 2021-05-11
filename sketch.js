@@ -2,10 +2,14 @@ function setup() {
   createCanvas(windowWidth,windowHeight);
   background(0);
   textSize(60);
-  var i;
-  for (i = 0; i < 100; i++) {
-    fill(211,122,32,100-i);
-    text("Press space for fullscreen.", 100, 200);
+  
+  setTimeout(() => {  console.log("World!"); }
+    var i;
+    for (i = 0; i < 100; i++) {
+      fill(211,122,32,100-i);
+      text("Press space for fullscreen.", 100, 200);
+    }, 2000);
+  }
 }    
   
   
