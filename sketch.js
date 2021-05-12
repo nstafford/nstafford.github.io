@@ -12,8 +12,7 @@ function setup() {
 //   }
 }    
   
-  
-}
+
 // event = keyup or keydown
 document.addEventListener('keyup', event => {
   if (event.code === 'Space') {
@@ -48,9 +47,9 @@ document.addEventListener('keyup', event => {
 //     fullscreen(!fs); 
 // }
 
-function windowResized() {
-  resizeCanvas(windowWidth, windowHeight);
-}
+// function windowResized() {
+//   resizeCanvas(windowWidth, windowHeight);
+// }
 
 function draw() {
   const radius = 80;
