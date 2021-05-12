@@ -3,38 +3,50 @@ function setup() {
   background(0);
   textSize(60);
   
-  setTimeout(() => {
-    var i;
-    for (i = 0; i < 100; i++) {
-      fill(211,122,32,100-i);
-      text("Press space for fullscreen.", 100, 200);
-    }, 2000);
-  }
+//   setTimeout(() => {
+//     var i;
+//     for (i = 0; i < 100; i++) {
+//       fill(211,122,32,100-i);
+//       text("Press space for fullscreen.", 100, 200);
+//     }, 2000);
+//   }
 }    
   
   
 }
-
-function keyPressed() {
-  if (keyCode === SPACE) {
+// event = keyup or keydown
+document.addEventListener('keyup', event => {
+  if (event.code === 'Space') {
+    console.log('Space pressed')
     // Set the value of fullscreen
     // into the variable
     let fs = fullscreen();
       
     // Call to fullscreen function
-    fullscreen(!fs); 
+    fullscreen(!fs);
   }
-}
+})
 
-function mousePressed() {
+// function keyPressed() {
+//   if (keyCode === SPACE) {
+//     // Set the value of fullscreen
+//     // into the variable
+//     let fs = fullscreen();
       
-    // Set the value of fullscreen
-    // into the variable
-    let fs = fullscreen();
+//     // Call to fullscreen function
+//     fullscreen(!fs); 
+//   }
+// }
+
+// function mousePressed() {
       
-    // Call to fullscreen function
-    fullscreen(!fs); 
-}
+//     // Set the value of fullscreen
+//     // into the variable
+//     let fs = fullscreen();
+      
+//     // Call to fullscreen function
+//     fullscreen(!fs); 
+// }
 
 function windowResized() {
   resizeCanvas(windowWidth, windowHeight);
