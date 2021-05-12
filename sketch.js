@@ -2,7 +2,7 @@ function setup() {
   createCanvas(windowWidth,windowHeight);
   background(0);
   textSize(60);
-  
+}  
 //   setTimeout(() => {
 //     var i;
 //     for (i = 0; i < 100; i++) {
@@ -10,7 +10,6 @@ function setup() {
 //       text("Press space for fullscreen.", 100, 200);
 //     }, 2000);
 //   }
-}    
   
 
 // event = keyup or keydown
