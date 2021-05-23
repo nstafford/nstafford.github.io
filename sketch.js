@@ -2,6 +2,7 @@ function setup() {
   createCanvas(windowWidth,windowHeight);
   background(0);
   textSize(60);
+  colorMode(HSB);
 }  
 //   setTimeout(() => {
 //     var i;
@@ -53,7 +54,7 @@ document.addEventListener('keyup', event => {
 function draw() {
   const radius = 80;
   if (mouseIsPressed) {
-    fill(0);
+    fill(mouseX/windowWidth*255,255,255);
   } else {
     fill(255);
   }
