@@ -56,7 +56,7 @@ function draw() {
   if (mouseIsPressed) {
     fill(mouseX/windowWidth*255,255,255);
   } else {
-    fill(255);
+    fill(255-mouseX/windowWidth*255,255,255);
   }
   if (
     mouseX > radius &&
