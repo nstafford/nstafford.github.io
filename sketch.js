@@ -3,8 +3,9 @@ function setup() {
   background(0);
   textSize(60);
   colorMode(HSB);
-  strokeWeight(4);
-  stroke(51);
+  //strokeWeight(4); // line width
+  //stroke(51);  // line color grayscale (one number)
+  noStroke();
 }  
 //   setTimeout(() => {
 //     var i;
