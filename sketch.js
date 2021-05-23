@@ -3,6 +3,8 @@ function setup() {
   background(0);
   textSize(60);
   colorMode(HSB);
+  strokeWeight(4);
+  stroke(51);
 }  
 //   setTimeout(() => {
 //     var i;
